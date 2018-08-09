@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Mykola  Poliukh](https://up.htmlacademy.ru/htmlcss/22/user/480685).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Выхрыстюк](https://htmlacademy.ru/profile/id568747).
 
 ---
 
