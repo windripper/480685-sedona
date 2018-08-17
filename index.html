@@ -99,6 +99,25 @@
         </section>
       </div>
 
+      <section class="search-form">
+        <h2>Поиск гостиницы в Седоне</h2>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <label>Дата заезда
+            <input type="text" name="check-in" placeholder="24 апреля 2017"><br>
+          </label>
+          <label>Дата выезда
+            <input type="text" name="check-out" placeholder="4 июля 2017"><br>
+          </label>
+          <label for="search-form-adults">
+            <input id="search-form-adults" type="text" name="adults">
+          </label>
+          <label for="search-form-children">
+            <input id="search-form-children" type="text" name="children">
+          </label>
+          <button class="button" type="submit">Найти</button>
+        </form>
+      </section>
+
       <div class="container">
         <div class="map">
           <img src="img/map.jpg" width="1200" height="593" alt="Карта где находится Седона">
@@ -118,7 +137,8 @@
       </section>
       <section class="copyright">
         <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <a href="https://htmlacademy.ru/intensive/htmlcss"
+        aria-label="Лендинг интенсива «Профессиональный HTML и CSS, уровень 1»">
           <img src="#" alt="HTML Академия">
         </a>
       </section>

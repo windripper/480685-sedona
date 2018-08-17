@@ -8,7 +8,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo" href="index.html" aria-label="Переход на главную страницу">
           <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
         </a>
         <ul class="main-navigation-list">
@@ -26,7 +26,63 @@
         <h1 class="visually-hidden">Гостинницы Седоны</h1>
         <section class="filters">
           <h2 class="visually-hidden">Фильтр гостиниц</h2>
-          <!-- Здесь будет фильтр -->
+          <form class="filter" action="https://echo.htmlacademy.ru" >
+            <fieldset class="filter-utilities">
+              <legend>Инфраструктура</legend>
+              <ul class="filter-utilities-list">
+                <li class="filter-utilities-item">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox"
+                    type="checkbox" name="swimming-pool" checked>Бассейн<br>
+                  </label>
+                </li>
+                <li class="filter-utilities-item">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox"
+                    type="checkbox" name="parking-lot">Парковка<br>
+                  </label>
+                </li>
+                <li class="filter-utilities-item">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox"
+                    type="checkbox" name="wi-fi">Wi-fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="fitler-house-type">
+              <legend>Тип жилья</legend>
+              <ul class="filter-house-type-list">
+                <li class="filter-house-type-item">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox"
+                    type="checkbox" name="hotel" checked>Гостиница<br>
+                  </label>
+                </li>
+                <li class="filter-house-type-item">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox"
+                    type="checkbox" name="motel" checked>Мотель<br>
+                  </label>
+                </li>
+                <li class="filter-house-type-item">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox"
+                    type="checkbox" name="apartments" checked>Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filter-cost-range">
+              <legend>Стоимость в сутки(Р):</legend>
+              <span class="cost-range-from">От 0</span>
+              <span class="cost-range-up-to">До 3000</span>
+              <input type="range" name="price" min="0" max="4000" step="1000" value="3000">
+            </fieldset>
+
+            <button class="button" type="submit">Показать</button>
+          </form>
         </section>
       </div>
 
@@ -65,7 +121,7 @@
               </div>
               <section class="hotel-1-desc">
               <a  href="#"><h3>Amara Resort & Spa</h3></a>
-              <p class="hotel-type">Гостинница</p>
+              <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 4000 Р.</p>
               <a class="hotel-item-details" href="#">Подробнее</a>
               <a class="hotel-item-reserve" href="#">Забронировать</a>
@@ -105,7 +161,7 @@
 
             <li class="hotel-item-3">
               <div class="hotel-3-img">
-                <a href="#"><src="img/hotel-3.jpg" width="135" height="90"
+                <a href="#"><img src="img/hotel-3.jpg" width="135" height="90"
                   alt="Фотография виллы Villas At Poco Diablo"></a>
               </div>
               <section class="hotel-3-desc">
