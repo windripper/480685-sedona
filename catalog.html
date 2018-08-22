@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -23,10 +25,9 @@
       </nav>
     </div>
   </header>
-  <main>
 
+  <main class="catalog-page">
     <h1 class="visually-hidden">Гостинницы Седоны</h1>
-
     <section class="filters">
       <div class="container">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
@@ -81,8 +82,10 @@
 
           <fieldset class="filter-cost">
             <legend>Стоимость в сутки(Р):</legend>
-            <span class="cost-range-from">От 0</span>
-            <span class="cost-range-up-to">До 3000</span>
+            <div class="cost-range-output">
+              <span class="cost-range-from">От 0</span>
+              <span class="cost-range-up-to">До 3000</span>
+            </div>
             <div class="filter-cost-range">
               <div class="cost-range-line"></div>
               <div class="cost-range-line-inside"></div>
@@ -188,6 +191,7 @@
               <p class="hotel-rating">Рейтинг: 9.2</p>
             </section>
           </li>
+        </ul>
       </div>
     </section>
 
@@ -206,7 +210,7 @@
       <section class="copyright">
         <span>Website by</span>
         <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Лендинг интенсива «Профессиональный HTML и CSS, уровень 1">
-          <img src="img\logo_name_htmlacademy.svg" width="115" height="41" alt="HTML Академия">
+          <img src="img/logo_name_htmlacademy.svg" width="115" height="41" alt="HTML Академия">
         </a>
       </section>
     </div>
