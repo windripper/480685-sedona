@@ -24,10 +24,24 @@
         </ul>
       </nav>
     </div>
+
+    <section class="welcome-picture">
+      <h2 class="visually-hidden">Баннер</h2>
+      <div class="container">
+        <img src="img/welcome.svg" width="459" height="353" alt="Вид на каньон Седоны">
+      </div>
+    </section>
+
+    <section class="description">
+      <div class="container">
+        <h1>Седона небольшой город в Аризоне, заслуживающий большего!</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньой!</p>
+      </div>
+    </section>
   </header>
 
   <main>
-    <section class="main-picture">
+    <!-- <section class="main-picture">
       <h2 class="visually-hidden">Баннер</h2>
       <div class="container">
         <img src="img/background-photo.jpg" width="1200" height="773" alt="Вид на каньон Седоны">
@@ -39,13 +53,15 @@
         <h1>Седона небольшой город в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньой!</p>
       </div>
-    </section>
+    </section> -->
 
     <section class="reason-1">
       <div class="container">
-        <h2>Настоящий городок</h2>
-        <span>-№1-</span>
-        <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
+        <div class="reason-1-wrapper">
+          <h2>Настоящий городок</h2>
+          <span>-№1-</span>
+          <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
         <img src="img/sedona-town.jpg" width="800" height="401" alt="Фото городка Седона">
       </div>
     </section>
@@ -76,9 +92,11 @@
 
     <section class="reason-2">
       <div class="container">
-        <h2>Там есть мост дьявола</h2>
-        <span>-№2-</span>
-        <p>Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
+        <div class="reason-2-wrapper">
+          <h2>Там есть мост дьявола</h2>
+          <span>-№2-</span>
+          <p>Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
+        </div>
         <img src="img/sedona-canyon.jpg" width="800" height="400" alt="Мост дьявола">
       </div>
     </section>
@@ -109,13 +127,17 @@
 
     <section class="excited">
       <div class="container">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц Седоны</p>
+        <div class="excited-wrapper">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц Седоны</p>
+        </div>
+        <button class="button button-searh-form-show">Поиск гостиницы в Седоне</button>
       </div>
+
     </section>
 
     <section class="search-form">
-      <h2>Поиск гостиницы в Седоне</h2>
+      <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
       <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
         <label>
           <span>Дата заезда</span>
