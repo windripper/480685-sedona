@@ -263,7 +263,7 @@ a {
   font-size: 21px;
 }
 
-.button-searh-form-show {
+.button-search-form-show {
   align-items: flex-end;
   width: 568px;
   height: 86px;
@@ -281,13 +281,13 @@ a {
 }
 
 
-.button-searh-form-show:hover {
+.button-search-form-show:hover {
   color: #ffffff;
 
   background-color: #604e43;
 }
 
-.button-searh-form-show:active {
+.button-search-form-show:active {
   color: rgba(255,255,255, 0.3);
 
   background-color: #503e33;
