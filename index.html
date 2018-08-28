@@ -20,21 +20,21 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостинницы</a></li>
+          <li><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </div>
 
     <section class="welcome-picture">
       <h2 class="visually-hidden">Баннер</h2>
-      <div class="container">
+      <div class="container ">
         <img src="img/welcome.svg" width="459" height="353" alt="Вид на каньон Седоны">
       </div>
     </section>
 
     <section class="description">
       <div class="container">
-        <h1>Седона небольшой город в Аризоне, заслуживающий большего!</h1>
+        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньой!</p>
       </div>
     </section>
@@ -59,32 +59,32 @@
       <div class="container">
         <div class="reason-1-wrapper">
           <h2>Настоящий городок</h2>
-          <span>-№1-</span>
-          <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
+          <span>— №1 —</span>
+          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <img src="img/sedona-town.jpg" width="800" height="401" alt="Фото городка Седона">
+        <img src="img/sedona-town.jpg" width="800" height="256" alt="Фото городка Седона">
       </div>
     </section>
 
     <section class="features-list">
       <div class="container">
         <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="feature-item">
+        <ul class="feature-item feature-item-house">
           <li>
-            <h3>Жилье</h3>
+            <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
         </ul>
-        <ul class="feature-item">
+        <ul class="feature-item feature-item-food">
           <li>
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
         </ul>
-        <ul class="feature-item">
+        <ul class="feature-item feature-item-stuff">
           <li>
             <h3>Сувениры</h3>
-            <p>Не только китайского но и местного производства!</p>
+            <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </div>
@@ -94,10 +94,10 @@
       <div class="container">
         <div class="reason-2-wrapper">
           <h2>Там есть мост дьявола</h2>
-          <span>-№2-</span>
-          <p>Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
+          <span>— №2 —</span>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-        <img src="img/sedona-canyon.jpg" width="800" height="400" alt="Мост дьявола">
+        <img src="img/sedona-canyon.jpg" width="800" height="256" alt="Мост дьявола">
       </div>
     </section>
 
@@ -108,17 +108,17 @@
         <h2 class="visually-hidden">Другие причины</h2>
         <section class="reason-3">
           <h3>Небольшая площадь</h3>
-          <span>-№3-</span>
-          <p>Все достопримечательности находятся довольно близко</p>
+          <span>— №3 —</span>
+          <p>Все достопримечательности находятся очень близко</p>
         </section>
         <section class="reason-4">
           <h3>Красивая дорога</h3>
-          <span>-№4-</span>
+          <span>— №4 —</span>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
         </section>
         <section class="reason-5">
           <h3>Мало туристов</h3>
-          <span>-№5-</span>
+          <span>— №5 —</span>
           <p>Большинство едет в Гранд Каньой и толпится там</p>
         </section>
       </div>
@@ -129,7 +129,8 @@
       <div class="container">
         <div class="excited-wrapper">
           <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц Седоны</p>
+          <!-- br? -->
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
         <button class="button button-search-form-show">Поиск гостиницы в Седоне</button>
       </div>
@@ -139,18 +140,18 @@
     <section class="search-form">
       <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
       <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-        <label>
+        <label class="appointment-item appointment-item-in">
           <span>Дата заезда</span>
           <input type="text" name="check-in" placeholder="24 апреля 2017">
         </label>
-        <label>
+        <label class="appointment-item appointment-item-out">
           <span>Дата выезда</span>
           <input type="text" name="check-out" placeholder="4 июля 2017">
         </label>
         <!-- div -->
-        <div>
+        <div class="adults-form-wrapper">
           <label for="search-form-adults">Взрослые</label>
-          <div>
+          <div >
             <button class="button button-adults-minus">-</button>
             <input id="search-form-adults" type="text" name="adults">
             <button class="button button-adults-plus">+</button>
@@ -178,21 +179,25 @@
 
   <footer class="main-footer">
     <div class="container">
-      <a href="#" class="hashtag-link">#VisitSedona</a>
+      <div class="hashtag">
+        <a href="#" class="hashtag-link">#VisitSedona</a>
+      </div>
       <section class="social">
         <h2 class="visually-hidden">Ссылки на социальные сети</h2>
         <ul class="social-list">
-          <li class="social-Twitter"><a href="#">Twitter</a></li>
-          <li class="social-Facebook"><a href="#">Facebook</a></li>
-          <li class="social-Youtube"><a href="#">Youtube</a></li>
+          <li><a class="social-link social-Twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+          <li><a class="social-link social-Facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-link social-Youtube" href="#"><span class="visually-hidden">Youtube</span></a></li>
         </ul>
       </section>
       <section class="copyright">
         <h2 class="visually-hidden">Авторские права</h2>
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Лендинг интенсива «Профессиональный HTML и CSS, уровень 1">
-          <img src="img/logo_name_htmlacademy.png" width="115" height="41" alt="HTML Академия">
-        </a>
+        <div class="copyright-wrapper">
+          <span>Website by</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Лендинг интенсива «Профессиональный HTML и CSS, уровень 1">
+            <!-- <img src="img/logo_name_htmlacademy.png" width="115" height="41" alt="HTML Академия"> -->
+          </a>
+        </div>
       </section>
     </div>
   </footer>
