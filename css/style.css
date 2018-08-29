@@ -259,7 +259,6 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
-  padding-top: 161px;
 
   font-size: 21px;
   line-height: 21px;
@@ -269,7 +268,28 @@ img {
   position: relative;
 }
 
-.feature-item-house h3::before {
+.feature-item-house img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 29px;
+}
+
+.feature-item-food img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 29px;
+}
+
+.feature-item-stuff img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 56px;
+  padding-bottom: 29px;
+}
+
+/* .feature-item-house h3::before {
   content: "";
 
   position: absolute;
@@ -303,7 +323,7 @@ img {
   left: 168px;
 
   background: url(../img/feature-icon-3.svg) no-repeat 0 0;
-}
+} */
 
 .feature-item-house p {
   max-width: 263px;
