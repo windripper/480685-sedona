@@ -50,6 +50,8 @@ a {
   background-color: #ffffff;
 }
 
+
+
 .main-navigation-list {
   display: flex;
 
@@ -62,6 +64,8 @@ a {
 
 .main-navigation-list a {
   font-weight: bold;
+
+  color: white;
   color: #000000;
 }
 
