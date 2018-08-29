@@ -52,15 +52,21 @@ img {
 .main-header {
   margin: 0;
   padding: 0;
+}
+
+.promo-picture {
+  margin: 0 auto;
+  padding: 0;
+
   background-image: url(../img/background-photo.jpg);
   background-size: 1200px 773px;
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 115%;
 }
 
 .welcome-picture {
   height: 353px;
-  margin-top: 76px;
+  padding-top: 75px;
 
   text-align: center;
 }
@@ -146,7 +152,7 @@ img {
 .description {
   min-height:  216px;
   margin: 0;
-  margin-top: 79px;
+  margin-top: 80px;
 
   text-align: center;
 
@@ -175,7 +181,8 @@ img {
   list-style: none;
 }
 
-.reason-1 {
+.reason-1,
+.reason-2 {
   width: 1200px;
   height: 256px;
   margin: 0 auto;
@@ -218,24 +225,27 @@ img {
   display: flex;
 }
 
-.reason-1-wrapper {
+.reason-1-wrapper,
+.reason-2-wrapper {
   width: 400px;
 }
 
-.features-list,
+.features,
 .feature-item {
   list-style: none;
 }
 
-.features-list {
+.features {
   margin: 0;
   padding: 0;
 
   text-align: center;
 }
 
-.features-list .container {
+.features-list {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .feature-item {
@@ -245,7 +255,7 @@ img {
   padding: 0;
 }
 
-.features-list h3 {
+.features h3 {
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
@@ -255,9 +265,7 @@ img {
   line-height: 21px;
 }
 
-.feature-item-house li,
-.feature-item-food li,
-.feature-item-stuff li {
+.features-list li {
   position: relative;
 }
 
@@ -331,19 +339,6 @@ img {
   list-style: none;
 }
 
-/* width */
-.reason-2 {
-  width: 1200px;
-  height: 256px;
-  margin: 0 auto;
-  padding: 0;
-
-  text-align: center;
-  color: #ffffff;
-
-  background-color: #81b3d2;
-}
-
 .reason-2 h2 {
   max-width: 151px;
   margin: 0;
@@ -374,10 +369,6 @@ img {
 
 .reason-2 img {
   order: -1;
-}
-
-.reason-2-wrapper {
-  width: 400px;
 }
 
 .other-reasons {
@@ -823,6 +814,8 @@ img {
 .main-footer .container {
   display: flex;
   min-height: 120px;
+
+  background-color: #ffffff;
 }
 
 .hashtag {
@@ -888,37 +881,37 @@ img {
   background-color: #5496bd;
 }
 
-.social-Twitter {
+.social-twitter {
   background-image: url(../img/twitter-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.social-Twitter:active {
+.social-twitter:active {
   background-image: url(../img/twitter-icon-opacity.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.social-Facebook {
+.social-facebook {
   background-image: url(../img/fb-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.social-Facebook:active {
+.social-facebook:active {
   background-image: url(../img/fb-icon-opacity.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.social-Youtube {
+.social-youtube {
   background-image: url(../img/youtube-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.social-Youtube:active {
+.social-youtube:active {
   background-image: url(../img/youtube-icon-opacity.svg);
   background-repeat: no-repeat;
   background-position: center;
