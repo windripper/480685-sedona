@@ -631,21 +631,31 @@ img {
   background-size: 1200px 593px;
 }
 
-/* catalog page */
+/**-----------------------------------------**
+*                 CATALOG PAGE
+***-----------------------------------------*/
 
-.filters {
+/* .filters {
   list-style: none;
 }
 
 .filter {
   list-style: none;
-}
+} */
 
 .filter-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-list li {
+  position: relative;
 }
 
 .filters {
+  height: 217px;
+
   color: #ffffff;
 
   background-image: url(../img/filter-background.jpg);
@@ -656,6 +666,9 @@ img {
 
 .filter {
   display: flex;
+  padding-top: 27px;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
 .filter fieldset {
@@ -665,6 +678,103 @@ img {
 .filter legend {
   font-size: 16px;
   font-weight: bold;
+}
+
+.filter-utilities {
+  margin: 0;
+  padding: 0;
+  margin-right: 118px;
+}
+
+.filter-utilities ul,
+.filter-house-type ul {
+  /* padding-left: 39px; */
+  padding-top: 25px;
+}
+
+.filter-utilities-pool::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-utilities-parking::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 23px;
+  height: 23px;
+
+  background-image: url(../img/checkbox-off.svg);
+}
+
+.filter-utilities-wifi::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 23px;
+  height: 23px;
+
+  background-image: url(../img/checkbox-off.svg);
+}
+
+.filter-utilities li {
+  padding-bottom: 25px;
+  padding-left: 39px;
+}
+
+.filter-house-type {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-house-type ul {
+  /* padding-left: 42px; */
+  padding-top: 25px;
+}
+
+.filter-house-type li {
+  padding-bottom: 25px;
+  padding-left: 42px;
+}
+
+.filter-house-type-hotel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-house-type-motel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-house-type-apartments::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-cost {
+  margin: 0;
+  padding: 0;
 }
 
 .cost-range-output {

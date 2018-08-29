@@ -20,60 +20,60 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li class="main-navigation-current"><a href="#">Гостинницы</a></li>
+          <li class="main-navigation-current"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="catalog-page">
-    <h1 class="visually-hidden">Гостинницы Седоны</h1>
+    <h1 class="visually-hidden">Гостиницы Седоны</h1>
     <section class="filters">
       <div class="container">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="filter" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-utilities">
-            <legend>Инфраструктура</legend>
+            <legend>Инфраструктура:</legend>
             <ul class="filter-list">
-              <li class="filter-utilities-item">
+              <li class="filter-utilities-pool">
                 <label>
-                    <input class="visually-hidden filter-input filter-input-checkbox"
+                    <input class="visually-hidden filter-input-checkbox-on"
                     type="checkbox" name="swimming-pool" checked>Бассейн<br>
                   </label>
               </li>
-              <li class="filter-utilities-item">
+              <li class="filter-utilities-parking">
                 <label>
-                    <input class="visually-hidden filter-input filter-input-checkbox"
+                    <input class="visually-hidden filter-input-checkbox-off"
                     type="checkbox" name="parking-lot">Парковка<br>
                   </label>
               </li>
-              <li class="filter-utilities-item">
+              <li class="filter-utilities-wifi">
                 <label>
-                    <input class="visually-hidden filter-input filter-input-checkbox"
+                    <input class="visually-hidden filter-input-checkbox-off"
                     type="checkbox" name="wi-fi">Wi-fi
                   </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="fitler-house-type">
-            <legend>Тип жилья</legend>
+          <fieldset class="filter-house-type">
+            <legend>Тип жилья:</legend>
             <ul class="filter-list">
-              <li class="filter-house-type-item">
+              <li class="filter-house-type-hotel">
                 <label>
-                    <input class="visually-hidden filter-input filter-input-checkbox"
+                    <input class="visually-hidden filter-input-checkbox-on"
                     type="checkbox" name="hotel" checked>Гостиница<br>
                   </label>
               </li>
-              <li class="filter-house-type-item">
+              <li class="filter-house-type-motel">
                 <label>
-                    <input class="visually-hidden filter-input filter-input-checkbox"
+                    <input class="visually-hidden filter-input-checkbox-on"
                     type="checkbox" name="motel" checked>Мотель<br>
                   </label>
               </li>
-              <li class="filter-house-type-item">
+              <li class="filter-house-type-apartments">
                 <label>
-                    <input class="visually-hidden filter-input filter-input-checkbox"
+                    <input class="visually-hidden filter-input-checkbox-on"
                     type="checkbox" name="apartments" checked>Апартаменты
                   </label>
               </li>
@@ -204,21 +204,24 @@
 
   <footer class="main-footer">
     <div class="container">
-      <a href="#" class="hashtag-link">#VisitSedona</a>
+      <section class="hashtag">
+        <a href="#" class="hashtag-link">#VisitSedona</a>
+      </section>
       <section class="social">
         <h2 class="visually-hidden">Ссылки на социальные сети</h2>
         <ul class="social-list">
-          <li class="social-Twitter"><a href="#">Twitter</a></li>
-          <li class="social-Facebook"><a href="#">Facebook</a></li>
-          <li class="social-Youtube"><a href="#">Youtube</a></li>
+          <li><a class="social-link social-twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+          <li><a class="social-link social-facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-link social-youtube" href="#"><span class="visually-hidden">Youtube</span></a></li>
         </ul>
       </section>
       <section class="copyright">
         <h2 class="visually-hidden">Авторские права</h2>
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Лендинг интенсива «Профессиональный HTML и CSS, уровень 1">
-          <img src="img/logo_name_htmlacademy.png" width="115" height="41" alt="HTML Академия">
-        </a>
+        <div class="copyright-wrapper">
+          <span>Website by</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Лендинг интенсива «Профессиональный HTML и CSS, уровень 1">
+          </a>
+        </div>
       </section>
     </div>
   </footer>
