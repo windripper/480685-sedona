@@ -605,6 +605,10 @@ img {
   height: 473px;
   margin: 0;
   padding: 0;
+
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: 1200px 593px;
 }
 
 /* catalog page */
