@@ -1,3 +1,6 @@
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
 body {
   margin: 0;
   padding: 0;
@@ -54,30 +57,6 @@ img {
   padding: 0;
 }
 
-.promo-picture {
-  margin: 0 auto;
-  padding: 0;
-
-  background-image: url(../img/background-photo.jpg);
-  background-size: 1200px 773px;
-  background-repeat: no-repeat;
-  background-position: 50% 115%;
-}
-
-.welcome-picture {
-  height: 353px;
-  padding-top: 75px;
-
-  text-align: center;
-}
-
-.main-navigation {
-  position: relative;
-  color: #000000;
-
-  background-color: #ffffff;
-}
-
 .main-navigation-list {
   list-style: none;
   display: flex;
@@ -131,6 +110,7 @@ img {
 .main-header-logo {
   position: absolute;
   left: calc(50% - 70px);
+  z-index: 1;
   width: 140px;
   height: 72px;
   margin: 0;
@@ -145,6 +125,46 @@ img {
   background-position: center;
 } */
 
+.promo-picture {
+  position: relative;
+  min-height: 508px;
+  margin: 0 auto;
+  padding: 0;
+
+  background-image: url(../img/background-photo.jpg);
+  background-size: 1200px 773px;
+  background-repeat: no-repeat;
+  background-position: 50% 21%;
+}
+
+.promo-picture::after {
+  position: absolute;
+  content: "";
+  width: 1200px;
+  height: 58px;
+  /* почему left 0 не работает */
+  left: 192px;
+  bottom: 0;
+
+  background-image: url(../img/polygon.svg);
+  background-repeat: no-repeat;
+  background-size: 1200px 59px;
+}
+
+.welcome-picture {
+  height: 353px;
+  padding-top: 75px;
+
+  text-align: center;
+}
+
+.main-navigation {
+  position: relative;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
 .description {
   list-style: none;
 }
@@ -152,7 +172,6 @@ img {
 .description {
   min-height:  216px;
   margin: 0;
-  margin-top: 80px;
 
   text-align: center;
 
@@ -1163,7 +1182,6 @@ img {
   background-color: #f2f2f2;
 }
 
-
 /**-----------------------------------------**
 *                 FOOTER
 ***-----------------------------------------*/
@@ -1180,11 +1198,9 @@ img {
 }
 
 .hashtag {
-  width: 400px;
+  /* width: 400px; */
   margin: 0;
   padding: 0;
-
-  background-color: #ffffff;
 }
 
 .hashtag-link {
@@ -1201,12 +1217,10 @@ img {
 
 .social {
   list-style: none;
-  width: 400px;
+  /* width: 400px; */
   min-height: 120px;
   margin: 0;
   padding: 0;
-
-  background-color: #ffffff;
 }
 
 .social ul {
@@ -1217,8 +1231,6 @@ img {
   padding: 0;
   padding-top: 36px;
   padding-left: 124px;
-
-  background-color: #ffffff;
 }
 
 .social-link {
@@ -1279,11 +1291,10 @@ img {
 }
 
 .copyright {
-  width: 400px;
+  /* width: 400px; */
   margin: 0;
   padding: 0;
 
-  background-color: #ffffff;
 }
 
 .copyright-wrapper {
@@ -1298,7 +1309,6 @@ img {
   padding-left: 102px;
 }
 
-/* почему перестала быть ссылкой? */
 
 .copyright-wrapper a {
   display: inline-block;
