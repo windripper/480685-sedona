@@ -562,17 +562,14 @@ img {
   margin: 0 auto;
   padding: 0;
 
-  background-color: red;
+  background-color: #ffffff;
 }
 
 .appointment-form {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding-top: 55px;
-  padding-bottom: 55px;
-  padding-left: 57px;
-  padding-right: 55px;
+  padding: 55px;
 }
 
 .appointment-item {
@@ -596,11 +593,23 @@ img {
   margin-right: 19px;
 }
 
+.adults-children-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 458px;
+  margin-bottom: 55px;
+}
+
 .adults-form-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 235px;
+  width: 224px;
+}
+
+.button-plus-minus-wrapper {
+  display: flex;
+  min-height: 36px;
 }
 
 .adults-form-wrapper button,
@@ -617,17 +626,37 @@ img {
   text-align: center;
 }
 
+.button-adults-minus {
+  padding-left: 8px;
+  padding-right: 12px;
+}
+
+.button-adults-plus {
+  padding-right: 12px;
+  padding-left: 13px;
+}
+
 .children-form-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 190px;
+  width: 179px;
 }
 
 .children-form-wrapper input {
   width: 20px;
 
   text-align: center;
+}
+
+.button-children-minus {
+  padding-left: 9px;
+  padding-right: 19px;
+}
+
+.button-children-plus {
+  padding-right: 13px;
+  padding-left: 23px;
 }
 
 .button-form-calendar {
@@ -983,7 +1012,7 @@ img {
   left: 80%;
 }
 
-.btn-transparent {
+.button-transparent {
   display: block;
   width: 137px;
   height: 36px;
@@ -1002,7 +1031,7 @@ img {
   cursor: pointer;
 }
 
-.btn-transparent:hover {
+.button-transparent:hover {
   color: #000000;
 
   background: #ffffff;
@@ -1183,8 +1212,6 @@ img {
 
 
   border-bottom: 1px solid #e5e5e5;
-  /* для сетки */
-  background-color: rgba(235,255,121, 0.3);
 }
 
 .hotel-1-img,
