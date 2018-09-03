@@ -636,6 +636,27 @@ img {
   padding-left: 13px;
 }
 
+.button-adults-minus,
+.button-adults-plus,
+.button-children-minus,
+.button-children-plus {
+  color: #a9a9a9;
+}
+
+.button-adults-minus:hover,
+.button-adults-plus:hover,
+.button-children-minus:hover,
+.button-children-plus:hover {
+  color: #000000;
+}
+
+.button-adults-minus:active,
+.button-adults-plus:active,
+.button-children-minus:active,
+.button-children-plus:active {
+  color: #81b3d2;
+}
+
 .children-form-wrapper {
   display: flex;
   justify-content: space-between;
@@ -668,17 +689,17 @@ img {
 
   border: none;
   background-color: transparent;
-  background-image: url(../img/calendar-opacity.png);
+  background-image: url(../img/calendar-gray.svg);
   background-repeat: no-repeat;
 }
 
 .button-form-calendar:hover {
-  background-image: url(../img/calendar.png);
+  background-image: url(../img/calendar-black.svg);
   background-repeat: no-repeat;
 }
 
 .button-form-calendar:active {
-  background-image: url(../img/calendar-blue.png);
+  background-image: url(../img/calendar-blue.svg);
   background-repeat: no-repeat;
 }
 
@@ -742,6 +763,10 @@ img {
   background-size: 1200px 593px;
 }
 
+.map iframe {
+  border: none;
+}
+
 /**-----------------------------------------**
 *                 CATALOG PAGE
 ***-----------------------------------------*/
@@ -771,7 +796,7 @@ img {
 
   background-image: url(../img/filter-background.jpg);
   background-size: 1200px 562px;
-  background-position: center;
+  background-position: 50% 16%;
   background-repeat: no-repeat;
 }
 
@@ -1132,19 +1157,19 @@ img {
   width: 11px;
   height: 10px;
 
-  background-image: url(../img/filter-up-gray.png);
+  background-image: url(../img/filter-up-gray.svg);
 }
 
 .filter-sorting-button-up:hover::before {
   position: absolute;
 
-  background-image: url(../img/filter-up.png);
+  background-image: url(../img/filter-up-black.svg);
 }
 
 .filter-sorting-button-up:active::before {
   position: absolute;
 
-  background-image: url(../img/filter-up-blue.png);
+  background-image: url(../img/filter-up-blue.svg);
 }
 
 .filter-sorting-button-down::before {
@@ -1155,25 +1180,25 @@ img {
   width: 11px;
   height: 10px;
 
-  background-image: url(../img/filter-down-gray.png);
+  background-image: url(../img/filter-down-gray.svg);
 }
 
 .filter-sorting-button-down-active::before {
   position: absolute;
 
-  background-image: url(../img/filter-down-blue.png);
+  background-image: url(../img/filter-down-blue.svg);
 }
 
 .filter-sorting-button-down:hover::before {
   position: absolute;
 
-  background-image: url(../img/filter-down.png);
+  background-image: url(../img/filter-down-black.svg);
 }
 
 .filter-sorting-button-down:active::before {
   position: absolute;
 
-  background-image: url(../img/filter-down-blue.png);
+  background-image: url(../img/filter-down-blue.svg);
 }
 
 .hotels-list {
@@ -1476,19 +1501,19 @@ img {
   width: 115px;
   height: 41px;
 
-  background-image: url(../img/logo_name_htmlacademy.png);
+  background-image: url(../img/logo-htmlacademy-black.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .copyright-wrapper a:hover {
-  background-image: url(../img/logo_name_htmlacademy_blue.png);
+  background-image: url(../img/logo-htmlacademy-blue.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .copyright-wrapper a:active {
-  background-image: url(../img/logo_name_htmlacademy_grey.png);
+  background-image: url(../img/logo-htmlacademy-gray.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
