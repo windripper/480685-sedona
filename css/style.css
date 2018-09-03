@@ -585,12 +585,12 @@ img {
   padding-bottom: 8px;
 }
 
-.appointment-item-in span {
-  margin-right: 22px;
+.appointment-item-in input {
+  margin-left: 23px;
 }
 
-.appointment-item-out span {
-  margin-right: 19px;
+.appointment-item-out input {
+  margin-left: 20px;
 }
 
 .adults-children-wrapper {
