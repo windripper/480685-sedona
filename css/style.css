@@ -60,6 +60,7 @@ img {
 .main-navigation-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -203,7 +204,7 @@ img {
 .reason-1,
 .reason-2 {
   width: 1200px;
-  height: 256px;
+  min-height: 256px;
   margin: 0 auto;
   padding: 0;
 
@@ -211,6 +212,11 @@ img {
   color: #ffffff;
 
   background-color: #81b3d2;
+}
+
+.reason-1 img,
+.reason-2 img {
+  height: 256px;
 }
 
 .reason-1 h2 {
@@ -233,6 +239,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 19px;
+  padding-bottom: 20px;
 
   line-height: 21px;
 }
@@ -308,48 +315,13 @@ img {
   padding-bottom: 29px;
 }
 
-/* .feature-item-house h3::before {
-  content: "";
-
-  position: absolute;
-  width: 75px;
-  height: 72px;
-  top: 60px;
-  left: 162px;
-
-  background: url(../img/feature-icon-1.svg) no-repeat 0 0;
-}
-
-.feature-item-food h3::before {
-  content: "";
-
-  position: absolute;
-  width: 75px;
-  height: 72px;
-  top: 60px;
-  left: 162px;
-
-  background: url(../img/feature-icon-2.svg) no-repeat 0 0;
-}
-
-.feature-item-stuff h3::before {
-  content: "";
-
-  position: absolute;
-  width: 64px;
-  height: 76px;
-  top: 56px;
-  left: 168px;
-
-  background: url(../img/feature-icon-3.svg) no-repeat 0 0;
-} */
-
 .feature-item-house p {
   max-width: 263px;
   margin: 0;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 20px;
 
   line-height: 21px;
 }
@@ -360,6 +332,7 @@ img {
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 20px;
 
   line-height: 21px;
 }
@@ -370,6 +343,7 @@ img {
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 20px;
 
   line-height: 21px;
 }
@@ -398,6 +372,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 19px;
+  padding-bottom: 20px;
 
   line-height: 21px;
 }
@@ -416,7 +391,7 @@ img {
 
 .other-reasons {
   width: 1200px;
-  height: 256px;
+  min-height: 256px;
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -455,6 +430,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 19px;
+  padding-bottom: 20px;
 
   line-height: 21px;
 }
@@ -466,6 +442,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 19px;
+  padding-bottom: 20px;
 
   line-height: 21px;
 }
@@ -477,6 +454,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 19px;
+  padding-bottom: 20px;
 
   line-height: 21px;
 }
@@ -790,7 +768,7 @@ img {
 }
 
 .filters {
-  height: 217px;
+  min-height: 217px;
 
   color: #ffffff;
 
@@ -1217,14 +1195,9 @@ img {
 }
 
 .hotels-found h3 {
-  margin-bottom: 10px;
   padding-top: 26px;
 
   font-size: 21px;
-}
-
-.hotel-type {
-  padding-right: 10px;
 }
 
 .hotel-item-1,
@@ -1235,7 +1208,6 @@ img {
   min-height: 151px;
   margin: 0 auto;
 
-
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1245,6 +1217,25 @@ img {
   padding-left: 72px;
   padding-top: 30px;
   padding-right: 30px;
+}
+
+.hotel-1-img img,
+.hotel-2-img img,
+.hotel-3-img img {
+  width: 135px;
+  height: 90px;
+}
+
+.hotel-1-desc,
+.hotel-2-desc,
+.hotel-3-desc {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.hotel-details-reserve-wrapper {
+  padding-bottom: 20px;
 }
 
 .hotel-type-price-wrapper {
@@ -1261,7 +1252,9 @@ img {
   margin-right: 3px;
   padding-top: 5px;
 
+  font-weight: bold;
   text-align: center;
+  vertical-align: top;
 }
 
 .hotel-item-reserve {
@@ -1270,7 +1263,9 @@ img {
   height: 28px;
   padding-top: 5px;
 
+  font-weight: bold;
   text-align: center;
+  vertical-align: top;
 }
 
 .rating {
@@ -1313,6 +1308,8 @@ img {
 .hotel-1-desc .hotel-title,
 .hotel-2-desc .hotel-title,
 .hotel-3-desc .hotel-title {
+  margin-bottom: 11px;
+
   font-size: 21px;
   font-weight: bold;
   color: #000000;
@@ -1430,7 +1427,7 @@ img {
   padding: 0;
   margin-right: 6px;
 
-  /* font-size: 0; ?*/
+  vertical-align: top;
 
   background-color: #81b3d2;
 }
@@ -1500,6 +1497,8 @@ img {
   display: inline-block;
   width: 115px;
   height: 41px;
+
+  vertical-align: top;
 
   background-image: url(../img/logo-htmlacademy-black.svg);
   background-repeat: no-repeat;
