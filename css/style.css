@@ -1076,12 +1076,14 @@ img {
 .filter-sorting .container {
   display: flex;
   align-items: center;
-  min-height: 87px;
+  padding-top: 33px;
+  padding-bottom: 32px;
 
   border-bottom: 1px solid #e5e5e5;
 }
 
 .filter-found {
+  margin: 0;
   padding-left: 72px;
   padding-right: 48px;
 
@@ -1423,9 +1425,10 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  min-height: 120px;
   padding-left: 133px;
   padding-right: 100px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 
   background-color: #ffffff;
 }
