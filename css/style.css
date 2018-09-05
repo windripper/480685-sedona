@@ -147,7 +147,6 @@ img {
 } */
 
 .promo-picture {
-  position: relative;
   min-height: 508px;
   margin: 0 auto;
   padding: 0;
@@ -158,13 +157,18 @@ img {
   background-position: 50% 21%;
 }
 
-.promo-picture::after {
+.promo-picture .container {
+  position: relative;
+  width: 1200px;
+  min-height: 508px;
+}
+
+.welcome-picture::after {
   position: absolute;
   content: "";
   width: 1200px;
   height: 58px;
-  /* почему left 0 не работает */
-  left: 192px;
+  left: 0;
   bottom: 0;
 
   background-image: url(../img/polygon.svg);
@@ -512,7 +516,6 @@ img {
 }
 
 .button-search-form-show {
-  /* почему не центрируется без блока? */
   display: block;
   width: 568px;
   height: 86px;
@@ -543,16 +546,26 @@ img {
   background-color: #503e33;
 }
 
+.search {
+  text-align: center;
+}
+
+.search-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
 .search-form {
   list-style: none;
   display: none;
   position: absolute;
-  left: 508px;
   top: 100%;
   width: 568px;
   height: 395px;
   margin: 0 auto;
   padding: 0;
+
+  font-weight: bold;
 
   background-color: #ffffff;
 }
@@ -602,6 +615,10 @@ img {
 .button-plus-minus-wrapper {
   display: flex;
   min-height: 36px;
+}
+
+.button-plus-minus-wrapper input:focus {
+  outline: 0;
 }
 
 .adults-form-wrapper button,
@@ -695,8 +712,9 @@ img {
   background-repeat: no-repeat;
 }
 
-.search-form {
-  font-weight: bold;
+.button-form-calendar:focus,
+.appointment-form button:focus {
+  outline: 0;
 }
 
 .search-form input {
@@ -788,9 +806,8 @@ img {
   }
 }
 
-.map {
+.map-wrapper {
   width: 1200px;
-  /* как работает? */
   height: 473px;
   margin: 0;
   padding: 0;
@@ -892,6 +909,12 @@ img {
   background-repeat: no-repeat;
 }
 
+.filter-input-checkbox-on:checked:focus+ .checkbox-indicator::before,
+.filter-input-checkbox-off:focus+ .checkbox-indicator::before{
+  outline: 1px solid #669ec0;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .filter-input-checkbox-on:disabled+ .checkbox-indicator::before {
   background-image: url(../img/checkbox-on-disabled.svg);
   background-repeat: no-repeat;
@@ -964,7 +987,6 @@ img {
   margin: 0;
 
   color: inherit;
-  font: inherit;
 
   background: none;
   border: none;
@@ -1071,16 +1093,29 @@ img {
   padding-right: 40px;
 }
 
-.filter-sorting span {
+.filter-sorting a,
+.filter-sort {
   font-size: 12px;
   line-height: 18px;
+}
+
+.filter-sorting a:focus {
+  outline: 1px solid #669ec0;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filter-sorting-price {
   padding-right: 32px;
 
   color: #81b3d2;
+  cursor: pointer;
 }
+
+/*.filter-sorting-price:focus,*/
+/*.filter-sorting-type:focus,*/
+/*.filter-sorting-rating:focus {*/
+  /**/
+/*}*/
 
 .filter-sorting-type {
   margin-right: 34px;
@@ -1091,6 +1126,7 @@ img {
   color: rgba(0, 0, 0, 0.3);
 
   border-bottom: 1px dashed #81b3d2;
+  cursor: pointer;
 }
 
 .filter-sorting-type:hover,
@@ -1111,6 +1147,8 @@ img {
   margin-left: auto;
   padding-left: 25px;
   padding-right: 71px;
+
+  cursor: pointer;
 }
 
 .filter-sorting-button-up {
@@ -1121,11 +1159,6 @@ img {
 
   border: none;
   background-color: transparent;
-}
-
-.filter-sorting-button-up:focus,
-.filter-sorting-button-down:focus {
-  outline: 0;
 }
 
 .filter-sorting-button-down {
