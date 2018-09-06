@@ -41,6 +41,9 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
+
+  box-shadow: 40px 0px 0px 0px #f2f2f2,
+  -40px 0px 0px 0px #f2f2f2;
 }
 
 a {
@@ -185,15 +188,15 @@ img {
 
 .description {
   list-style: none;
-}
-
-.description {
-  min-height:  216px;
   margin: 0;
 
   text-align: center;
 
   background-color: #ffffff;
+}
+
+.description .container {
+  min-height: 216px;
 }
 
 .description h1 {
@@ -404,17 +407,17 @@ img {
 
 .other-reasons {
   list-style: none;
-}
-
-.other-reasons {
   width: 1200px;
-  min-height: 256px;
   margin: 0 auto;
   padding: 0;
   text-align: center;
   color: #000000;
 
   background-color: #eeeeee;
+}
+
+.other-reasons .container {
+  min-height: 256px;
 }
 
 .other-reasons h3 {
@@ -623,7 +626,6 @@ img {
 
 .adults-form-wrapper button,
 .children-form-wrapper button {
-  /* padding: 15px; */
   font-size: 21px;
   line-height: 26px;
 }
@@ -633,6 +635,14 @@ img {
   padding: 10px;
 
   text-align: center;
+}
+
+.button-adults-minus:focus,
+.button-adults-plus:focus,
+.button-children-minus:focus,
+.button-children-plus:focus {
+  color: #000000;
+  outline: 0;
 }
 
 .button-adults-minus {
@@ -712,9 +722,11 @@ img {
   background-repeat: no-repeat;
 }
 
-.button-form-calendar:focus,
-.appointment-form button:focus {
+.button-form-calendar:focus {
   outline: 0;
+
+  background-image: url(../img/calendar-black.svg);
+  background-repeat: no-repeat;
 }
 
 .search-form input {
@@ -736,6 +748,8 @@ img {
   background-color: #f2f2f2;
   border: none;
 }
+
+
 
 .search-form button[type="submit"] {
   width: 458px;
@@ -825,27 +839,7 @@ img {
 *                 CATALOG PAGE
 ***-----------------------------------------*/
 
-/* .filters {
-  list-style: none;
-}
-
-.filter {
-  list-style: none;
-} */
-
-.filter-item-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.filter-item-list li {
-  position: relative;
-}
-
 .filters {
-  min-height: 217px;
-
   color: #ffffff;
 
   background-image: url(../img/filter-background.jpg);
@@ -854,6 +848,9 @@ img {
   background-repeat: no-repeat;
 }
 
+.filters .container {
+  min-height: 217px;
+}
 .filter {
   display: flex;
   padding-top: 27px;
@@ -868,6 +865,17 @@ img {
 .filter legend {
   font-size: 16px;
   font-weight: bold;
+}
+
+
+.filter-item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-item-list li {
+  position: relative;
 }
 
 .filter-item {
@@ -1163,6 +1171,10 @@ img {
   background-color: transparent;
 }
 
+.filter-sorting-button-up:focus {
+  outline: 0;
+}
+
 .filter-sorting-button-down {
   position: relative;
   width: 11px;
@@ -1170,6 +1182,10 @@ img {
 
   border: none;
   background-color: transparent;
+}
+
+.filter-sorting-button-down:focus {
+  outline: 0;
 }
 
 .filter-sorting-button-up::before {
@@ -1184,22 +1200,23 @@ img {
 }
 
 .filter-sorting-button-up:hover::before {
-  position: absolute;
+  background-image: url(../img/filter-up-black.svg);
+}
 
+.filter-sorting-button-up:focus::before {
   background-image: url(../img/filter-up-black.svg);
 }
 
 .filter-sorting-button-up:active::before {
-  position: absolute;
-
   background-image: url(../img/filter-up-blue.svg);
 }
 
 .filter-sorting-button-down::before {
   position: absolute;
+  content: "";
   left: 0;
   top: 0;
-  content: "";
+
   width: 11px;
   height: 10px;
 
@@ -1213,38 +1230,16 @@ img {
 }
 
 .filter-sorting-button-down:hover::before {
-  position: absolute;
+  background-image: url(../img/filter-down-black.svg);
+}
 
+.filter-sorting-button-down:focus::before {
   background-image: url(../img/filter-down-black.svg);
 }
 
 .filter-sorting-button-down:active::before {
-  position: absolute;
-
   background-image: url(../img/filter-down-blue.svg);
 }
-
-/*.hotel-hard {*/
-  /*display: flex;*/
-  /*padding: 32px 72px;*/
-
-/*}*/
-
-/*.hotel-hard img {*/
-  /*width: 135px;*/
-  /*height: 90px;*/
-/*}*/
-
-/*.hotel-hard h3 {*/
-  /*order: -1;*/
-  /*margin: 0;*/
-  /*padding: 0;*/
-/*}*/
-
-/*.hotel-hard a {*/
-  /*order: -2;*/
-  /*padding-right: 32px;*/
-/*}*/
 
 .hotels-list {
   list-style: none;
