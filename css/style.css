@@ -149,6 +149,7 @@ img {
   margin: 0 auto;
   padding: 0;
 
+  background-color: #55890b;
   background-image: url(../img/background-photo.jpg);
   background-size: 1200px 773px;
   background-repeat: no-repeat;
