@@ -1,3 +1,5 @@
+"use strict";
+
 var button = document.querySelector(".button-search-form-show");
 var form = document.querySelector(".search-form");
 var inputIn = form.querySelector(".appointment-item-in input");
@@ -10,6 +12,16 @@ var plusChild = form.querySelector(".button-children-plus");
 var numAdult = form.querySelector('#search-form-adults').value;
 var numChild = form.querySelector('#search-form-children').value;
 
+var isStorageSupport = true;
+var storage = "";
+
+try {
+  storage = localStorage.getItem("numAdult");
+  storage = localStorage.getItem("numChild");
+} catch (err) {
+  isStorageSupport = false;
+}
+
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
 
@@ -18,6 +30,11 @@ button.addEventListener("click", function (evt) {
     form.classList.remove("search-form-show");
     form.offsetWidth = form.offsetWidth;
     form.classList.add("search-form-show");
+  }
+
+  if (storage) {
+    numAdult.value = storage;
+    numChild.value = storage;
   }
 
   setTimeout(function () {
@@ -29,6 +46,11 @@ form.addEventListener("submit", function (evt) {
   if (!inputIn.value || !inputOut.value) {
     evt.preventDefault();
     form.classList.add("search-form-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("numAdult", numAdult.value);
+      localStorage.setItem("numChild", numChild.value);
+    }
   }
 });
 
