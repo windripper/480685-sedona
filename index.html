@@ -31,6 +31,7 @@
 <main>
 
   <section class="promo-picture">
+    <h2 class="visually-hidden">Баннер</h2>
     <div class="container">
       <section class="welcome-picture">
         <h2 class="visually-hidden">Баннер</h2>
@@ -124,27 +125,28 @@
   </section>
 
   <section class="search">
+    <h2 class="visually-hidden">Форма поиска гостиницы</h2>
     <div class="container">
       <div class="search-wrapper">
         <button class="button button-search-form-show" type="button">Поиск гостиницы в Седоне</button>
-        <section class="search-form">
+        <section class="search-form search-form-show">
           <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
           <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="appointment-item appointment-item-in">
-              <label>Дата заезда
+              <label>Дата заезда:
                 <input type="text" name="check-in" placeholder="24 апреля 2017">
               </label>
               <button class="button-form-calendar" type="button"></button>
             </div>
             <div class="appointment-item appointment-item-out">
-              <label>Дата выезда
+              <label>Дата выезда:
                 <input type="text" name="check-out" placeholder="4 июля 2017">
               </label>
               <button class="button-form-calendar" type="button"></button>
             </div>
             <div class="adults-children-wrapper">
               <div class="adults-form-wrapper">
-                <label for="search-form-adults">Взрослые</label>
+                <label for="search-form-adults">Взрослые:</label>
                 <div class="button-plus-minus-wrapper">
                   <button class="button button-adults-minus" type="button">—</button>
                   <input id="search-form-adults" type="text" name="adults" value="2">
@@ -152,7 +154,7 @@
                 </div>
               </div>
               <div class="children-form-wrapper">
-                <label for="search-form-children">Дети</label>
+                <label for="search-form-children">Дети:</label>
                 <div class="button-plus-minus-wrapper">
                   <button class="button button-children-minus" type="button">—</button>
                   <input id="search-form-children" type="text" name="children" value="0">
@@ -168,6 +170,7 @@
   </section>
 
   <section class="map">
+    <h2 class="visually-hidden">Карта где город Седона</h2>
     <div class="container">
       <div class="map-wrapper">
         <iframe
