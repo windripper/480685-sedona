@@ -20,10 +20,9 @@ button.addEventListener("click", function (evt) {
     form.classList.add("search-form-show");
   }
 
-  setTimeout(()=>{
+  setTimeout(function () {
     form.classList.toggle("search-form-show");
-  },300)
-
+  }, 300);
 });
 
 form.addEventListener("submit", function (evt) {
