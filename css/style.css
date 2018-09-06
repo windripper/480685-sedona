@@ -12,7 +12,7 @@ body {
   color: #000000;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -42,10 +42,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 
   box-shadow:  2px 0 25px 0 #d9d8d8,
-              -2px 0 25px 0 #d9d8d8,
-                 40px 0 0 0 #f2f2f2,
-                -40px 0 0 0 #f2f2f2;
- ;
+              -2px 0 25px 0 #d9d8d8;
 }
 
 .container {
@@ -149,7 +146,7 @@ img {
   margin: 0 auto;
   padding: 0;
 
-  background-color: #55890b;
+  background-color: #92c1d9;
   background-image: url(../img/background-photo.jpg);
   background-size: 1200px 773px;
   background-repeat: no-repeat;
@@ -168,7 +165,7 @@ img {
   width: 1200px;
   height: 58px;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 
   background-image: url(../img/polygon.svg);
   background-repeat: no-repeat;
@@ -765,6 +762,7 @@ img {
 .filters {
   color: #ffffff;
 
+  background-color: #7899bc;
   background-image: url(../img/filter-background.jpg);
   background-size: 1200px 562px;
   background-position: 50% 16%;
