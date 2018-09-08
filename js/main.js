@@ -9,8 +9,8 @@ var minusAdult = form.querySelector(".button-adults-minus");
 var plusAdult = form.querySelector(".button-adults-plus");
 var minusChild = form.querySelector(".button-children-minus");
 var plusChild = form.querySelector(".button-children-plus");
-var numAdult = form.querySelector('#search-form-adults').value;
-var numChild = form.querySelector('#search-form-children').value;
+var numAdult = form.querySelector("#search-form-adults").value;
+var numChild = form.querySelector("#search-form-children").value;
 
 var isStorageSupport = true;
 var storage = "";

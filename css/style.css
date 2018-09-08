@@ -975,7 +975,7 @@ img {
   width: 137px;
   height: 36px;
   margin: 0;
-  margin-left: 82px;
+  margin-left: 83px;
   padding: 0 36px;
 
   font-size: 14px;
@@ -1207,15 +1207,15 @@ img {
   display: flex;
   justify-content: space-between;
   width: 182px;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 }
 
 .hotel-item-details {
   width: 110px;
-  height: 28px;
-  margin-right: 5px;
+  height: 27px;
+  margin-right: 6px;
   margin-bottom: 5px;
-  padding-top: 4px;
+  padding-top: 3px;
   padding-bottom: 10px;
 
   font-weight: bold;
@@ -1239,10 +1239,10 @@ img {
 
 .hotel-item-reserve {
   width: 142px;
-  height: 28px;
+  height: 27px;
   margin-right: 5px;
   margin-bottom: 5px;
-  padding: 4px 0 10px;
+  padding: 3px 0 10px;
 
   font-weight: bold;
   text-align: center;
