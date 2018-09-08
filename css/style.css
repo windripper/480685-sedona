@@ -320,7 +320,6 @@ img {
 }
 
 .reason-2 h2 {
-  max-width: 151px;
   margin: 0 auto 21px;
   padding: 47px 0 0;
 
@@ -1329,20 +1328,19 @@ img {
 
 .main-footer .container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 133px;
-  padding-right: 100px;
   padding-top: 36px;
-  padding-bottom: 36px;
 
   background-color: #ffffff;
 }
 
 .hashtag {
+  display: flex;
+  justify-content: center;
+  min-width: 400px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 36px;
 }
 
 .hashtag-link {
@@ -1358,9 +1356,11 @@ img {
 .social {
   list-style: none;
 
+  display: flex;
+  justify-content: center;
+  min-width: 400px;
   margin: 0;
-  padding: 0;
-  padding-left: 27px;
+  padding: 0 0 36px;
 }
 
 .social-list {
@@ -1436,8 +1436,11 @@ img {
 }
 
 .copyright {
+  display: flex;
+  justify-content: center;
+  min-width: 400px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 36px;
 }
 
 .copyright-wrapper {
