@@ -928,11 +928,8 @@ img {
   border: none;
 }
 
-.filter-item-legend-wrapper {
-  width: 150px;
-}
-
 .filter legend {
+  width: 200px;
   word-wrap: break-word;
 
   font-size: 16px;
